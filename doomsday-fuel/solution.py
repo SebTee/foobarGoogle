@@ -2,7 +2,7 @@ from fractions import Fraction
 from functools import reduce
 
 
-def greatest_common_denominator(x, y):
+def greatest_common_denominator(x, y):  # using Euclid's algorithm
     if x > y:
         x, y = y, x
     if y % x == 0:
@@ -98,7 +98,7 @@ def format_output(probabilities):
     return output
 
 
-def solution(m):
+def solution(m):  # solved using absorbing markov chain
     terminal_states, non_terminal_states = find_terminal_states(m)
     if 0 in terminal_states:
         return format_output([Fraction(1, 1)] + [Fraction(0, 1)] * (len(terminal_states) - 1))
