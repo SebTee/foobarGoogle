@@ -25,6 +25,3 @@ print(solution('4', '7'))
 
 print(solution('2', '1'))
 # 1
-
-print(solution('3', '1'))
-# impossible
