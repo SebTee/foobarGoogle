@@ -1,2 +1,2 @@
 # foobarGoogle
-My atempt at the foobar coding challenge.
+My attempt at the foobar coding challenge.
